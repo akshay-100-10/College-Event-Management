@@ -1525,6 +1525,7 @@ const CollegeDashboard = () => {
                                             onClick={() => setFormData({
                                                 ...formData,
                                                 sub_events: [...formData.sub_events, {
+                                                    id: crypto.randomUUID(), event_id: '', booked_seats: 0,
                                                     title: '', description: '', start_time: '', end_time: '',
                                                     venue: '', price: 0, total_seats: 50, requires_registration: false
                                                 }]
